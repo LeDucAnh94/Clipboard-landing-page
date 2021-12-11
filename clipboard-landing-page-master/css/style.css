@@ -1,0 +1,370 @@
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    max-width: 1440px;
+    margin: auto;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: var(--Grayish-Blue);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #000;
+}
+
+header {
+    background-image: url(/images/bg-header-desktop.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 6em 0;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.small-container {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+main .showcase {
+    text-align: center;
+    margin-top: -40px;
+    padding-bottom: 4em;
+}
+
+.para h2 {
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+
+.para p {
+    font-size: 1.4rem;
+    margin: 1em auto 2em;
+    line-height: 1.4em;
+}
+
+.download_btn {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.one {
+    background-color: var(--Strong-Cyan);
+    box-shadow: var(--Dark-Grayish-Blue);
+}
+
+.two {
+    background-color: var(--Light-Blue);
+    box-shadow: var(--Strong-Cyan);
+}
+
+.keep-track {
+    padding: 3em 0;
+}
+
+.keep-track > h3 {
+    font-size: 2.2rem;
+}
+
+.keep-track > p {
+    margin: 1.2em auto 5em;
+    line-height: 1.6em;
+}
+
+.lower {
+    display: flex;
+}
+
+.lower-left img {
+    width: 100%;
+}
+
+.feature-container {
+    margin-left: 17%;
+    height: 90%;
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.feature h5 {
+    font-size: 1.5rem;
+}
+
+.feature p {
+    line-height: 1.8em;
+}
+
+.accessibility {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.accessibility h3 {
+    font-size: 2.2rem;
+}
+
+.accessibility p {
+    margin: 1.2em auto 5em;
+    line-height: 1.6em;
+}
+
+.tools {
+    text-align: center;
+    padding: 1em 0 3em;
+}
+
+.tools h3 {
+    font-size: 2.2rem;
+}
+
+.tools > p {
+    margin: 1.2em auto 3.8em;
+}
+
+.tools .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tool {
+    flex: 32%;
+}
+
+.tool h5 {
+    font-size: 1.5em;
+    margin: 1.5em .5em;
+}
+
+.tool p {
+    line-height: 1.7em;
+}
+
+.brands {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5em 0;
+}
+
+.brands .brand img {
+    width: 90%;
+    margin: auto;
+}
+
+.install .small-container {
+    padding: 3em 0 9em;
+    max-width: 750px;
+}
+
+.para h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.para p {
+    margin: 1em auto 2em;
+    line-height: 1.4em;
+    font-size: 1.2rem;
+}
+
+footer {
+    padding: 0 40px;
+    background-color: #F5F6F8;
+    padding: 10px 0;
+}
+
+footer .foot {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+}
+
+.foot .logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 70px;
+}
+
+.foot ul {
+    list-style: none;
+    max-width: 400px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2.1rem;
+}
+
+.one:hover{
+    color: #F5F6F8;
+}
+.two:hover{
+    color: #F5F6F8;
+}
+
+ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+a {
+    color: var(--Dark-Grayish-Blue);
+}
+
+a:hover {
+    color: var(--Strong-Cyan);
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width:920px) {
+    .accessibility img {
+        width: 60%;
+        margin: auto;
+    }
+
+    .lower {
+        align-items: center;
+    }
+
+    .lower-left img {
+        height: 200%;
+    }
+
+    .feature-container {
+        margin-left: 8%;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:765px) {
+    body {
+        font-size: 17px;
+    }
+
+    .container, .small-container, .install .small-container, .tools h3, .tools > p {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .lower {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .lower-left img {
+        width: 60%;
+        margin-bottom: 2em;
+    }
+    
+    .feature {
+        margin-bottom: 1.1em;
+    }
+
+    .feature-container {
+        width: 60%;
+        margin: auto;
+    }
+
+    .tools > p {
+        margin: 1.2em auto 3.8em;
+    }
+
+    .tools .container {
+        width: 60%;
+        flex-direction: column;
+    }
+
+    .tools :nth-child(2) img {
+        margin-top: 4em;
+    }
+
+    .tools :nth-child(2) p {
+        margin-bottom: 4em;
+    }
+
+    footer .foot {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       text-align: center;
+       padding: 20px 0;
+    }
+
+    ul li {
+        display: grid;
+        margin: 20px 0;
+    }
+
+    .social-icons a{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .para h2, .para h3 {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+
+    .download_btn {
+        display: block;
+    }
+
+    .download .one{
+        margin-bottom: 1em;
+    }
+
+    .feature-container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .tools .container {
+        width: 70%;
+        flex-direction: column;
+    }
+
+    .brands {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em 0;
+    }
+
+    .brands .brand img {
+        width: 100%;
+        margin: 1em auto;
+    }
+
+    
+}
