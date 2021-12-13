@@ -243,6 +243,11 @@ footer p {
     text-align: center;
 }
 
+.fab:hover {
+    color: var(--Strong-Cyan);
+    cursor: pointer;
+}
+
 /* Media Queries */
 @media screen and (max-width:920px) {
     .accessibility img {
